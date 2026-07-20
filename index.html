@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dipps | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <nav>
+        <div class="logo">dipps<span class="dot">.</span></div>
+        <div class="nav-links">
+            <button class="nav-btn active" onclick="switchPage('about')">Home</button>
+            <button class="nav-btn" onclick="switchPage('skills')">Skills</button>
+            <button class="nav-btn" onclick="switchPage('projects')">Videos</button>
+        </div>
+    </nav>
+
+    <main class="content-container">
+        
+        <section id="about" class="page active">
+            <div class="hero-content">
+                <div class="badge">4 Years Experience</div>
+                <h1>Hi, I'm <span class="highlight">dipps</span>.</h1>
+                <h2>Roblox Studio Developer</h2>
+                <p class="bio">
+                    I have over 4 years of experience bringing digital experiences to life inside Roblox Studio. 
+                    From complex backend engineering to large-scale world building, optimization, 3D modelling, and custom rig animations, I handle the full development pipeline.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn primary" onclick="switchPage('projects')">View Videos</button>
+                    <button class="btn secondary" onclick="switchPage('skills')">Explore Skills</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="page">
+            <h3 class="section-title">Technical Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-card skill-scripting">
+                    <div class="card-glow"></div>
+                    <div class="icon">📜</div>
+                    <h4>Scripting</h4>
+                    <p>Advanced Luau scripting, object-oriented systems, network optimization, data storage frameworks, and advanced gameplay mechanics.</p>
+                </div>
+                <div class="skill-card skill-building">
+                    <div class="card-glow"></div>
+                    <div class="icon">🔨</div>
+                    <h4>Building</h4>
+                    <p>Creating highly detailed and optimized environments, aesthetic level mapping, atmospheric lighting configurations, and game world design.</p>
+                </div>
+                <div class="skill-card skill-modelling">
+                    <div class="card-glow"></div>
+                    <div class="icon">📐</div>
+                    <h4>Modelling</h4>
+                    <p>Designing performant 3D assets, optimized custom meshes, map props, and detailed spatial geometry built specifically for Roblox gameplay stability.</p>
+                </div>
+                <div class="skill-card skill-animating">
+                    <div class="card-glow"></div>
+                    <div class="icon">🎬</div>
+                    <h4>Animating</h4>
+                    <p>Bringing custom character models and weapons to life using fine-tuned keyframe layouts, fluid action tracking, and procedural motor constraints.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="page">
+            <h3 class="section-title">My Video Showcases</h3>
+            <div class="youtube-grid">
+                
+                <a href="https://www.youtube.com/watch?v=_rDtoimiZyI" target="_blank" class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/_rDtoimiZyI/maxresdefault.jpg" class="video-thumbnail" onerror="this.src='https://img.youtube.com/vi/_rDtoimiZyI/mqdefault.jpg'">
+                        <div class="play-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title">Football Throwing System [LINK IN DESCRIPTION]</h4>
+                        <p class="video-description">A showcase and tutorial showing how to set up a physics-based football throwing system in Roblox Studio, complete with a power meter and target zones.</p>
+                        <span class="card-link">Watch Showcase &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=CG2QXSRnpXk" target="_blank" class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/CG2QXSRnpXk/maxresdefault.jpg" class="video-thumbnail" onerror="this.src='https://img.youtube.com/vi/CG2QXSRnpXk/mqdefault.jpg'">
+                        <div class="play-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title">Advanced party teleporter system [FREE]</h4>
+                        <p class="video-description">A demonstration of a party lobby system where you can choose the player amount and invite friends before triggering a group teleportation sequence into a custom game map.</p>
+                        <span class="card-link">Watch Showcase &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=3XDGOJAeacc" target="_blank" class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/3XDGOJAeacc/maxresdefault.jpg" class="video-thumbnail" onerror="this.src='https://img.youtube.com/vi/3XDGOJAeacc/mqdefault.jpg'">
+                        <div class="play-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title">Advanced Movement System [FREE]</h4>
+                        <p class="video-description">A video showcasing advanced character mechanics including customized crouching, sprinting animations, and dynamic movement setups.</p>
+                        <span class="card-link">Watch Showcase &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=AnXTZ03Z9HU" target="_blank" class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <img src="https://img.youtube.com/vi/AnXTZ03Z9HU/maxresdefault.jpg" class="video-thumbnail" onerror="this.src='https://img.youtube.com/vi/AnXTZ03Z9HU/mqdefault.jpg'">
+                        <div class="play-overlay">▶</div>
+                    </div>
+                    <div class="video-info">
+                        <h4 class="video-title">Infinite terrain generator</h4>
+                        <p class="video-description">A preview of a procedural script that handles infinite terrain generation, showing off customizable configurations like render distance settings and parts generation.</p>
+                        <span class="card-link">Watch Showcase &rarr;</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 dipps. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            const buttons = document.querySelectorAll('.nav-btn');
+
+            pages.forEach(page => page.classList.remove('active'));
+            buttons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('onclick').includes(pageId)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            const targetPage = document.getElementById(pageId);
+            targetPage.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
